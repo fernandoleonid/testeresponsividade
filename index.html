@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Site responsivo </title>
+    <meta name="description" content="Site Responsivo">
+    <meta name="keywords" content="responsivo">
+    <meta name="author" content="Fernando Leonid">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/icon.png">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container cabecalho">
+        <a href="index.html/"></a> <h1 class="logo"> Site Responsivo</h1>
+        <button class="btn-menu"> <i class="fa fa-bars fa-lg"></i> </button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Quem somes</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container banner">
+        <div class="title">
+            <h2> Teste de Banner </h2>
+            <h3> teste de banner teste de bannerteste de bannerteste de bannerteste de bannerteste de banner</h3>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-cadastrar"> Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
+            <button class="btn btn-sobre"> Sobre <i class="fa fa-question-circle"></i></button>
+        </div>
+    </div>
+
+    <main class="container servicos">
+        <article class="servico">
+            <a href="#"> <img src="./img/criacoes.jpg" alt="Campanhas publicitárias"></a>
+            <div class="inner">
+                <a href="#"> Campanhas publicitárias </a>
+                <h4>Impressos, VTs e Jingles</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget faucibus est, euismod elementum magna. Integer a enim a elit mattis laoreet. Aenean quis arcu lacinia, rhoncus justo at, pretium tortor. Pellentesque sed arcu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque libero lacus, hendrerit ut magna vitae, viverra porttitor lectus. Cras facilisis diam mauris</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"> <img src="./img/md.jpg" alt="Marketing Digital"></a>
+            <div class="inner">
+                <a href="#"> Marketing Digital </a>
+                <h4>Administração de Redes Sociais</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget faucibus est, euismod elementum magna. Integer a enim a elit mattis laoreet. Aenean quis arcu lacinia, rhoncus justo at, pretium tortor. Pellentesque sed arcu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque libero lacus, hendrerit ut magna vitae, viverra porttitor lectus. Cras facilisis diam mauris</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"> <img src="./img/cs.jpg" alt="Criação de sites"></a>
+            <div class="inner">
+                <a href="#"> Criação de sites </a>
+                <h4>Sites administraveis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget faucibus est, euismod elementum magna. Integer a enim a elit mattis laoreet. Aenean quis arcu lacinia, rhoncus justo at, pretium tortor. Pellentesque sed arcu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque libero lacus, hendrerit ut magna vitae, viverra porttitor lectus. Cras facilisis diam mauris</p>
+            </div>
+        </article>
+    </main>
+    <section class="newsletter container">
+        <h2> Inscreva-se agora!</h2>
+        <h3> Receba novidades, dicas e muito mais</h3>
+        <form action="">
+            <input type="email" name="email" placeholder="Seu e-mail">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+
+    <footer class="container rodape">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright @ - Todos os direitos reservados.
+        </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-menu").click (function () {
+            $(".menu").show();
+        });
+        $(".btn-close").click (function () {
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>
