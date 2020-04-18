@@ -1,0 +1,22 @@
+{
+	"dir" : "ltr",
+	"lang" : "pt-br",
+	"name" : "Site responsivo Document",
+	"scope" : "/testeresponsividade/",
+	"display" : "browser",
+	"start_url" : "https://fernandoleonid.github.io/testeresponsividade/",
+	"short_name" : "Site responsivo",
+	"theme_color" : "transparent",
+	"description" : "Site Responsivo",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : [],
+	"prefer_related_applications" : false,
+	"icons" : [
+		{
+			"src": "https://fernandoleonid.github.io/testeresponsividade/img/icon.png",
+			"sizes": "56x56"
+		}],
+	"url" : "https://fernandoleonid.github.io/testeresponsividade/",
+	"generated" : "true"
+}
