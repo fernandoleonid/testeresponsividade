@@ -7,12 +7,12 @@
     <meta name="description" content="Site Responsivo">
     <meta name="keywords" content="responsivo">
     <meta name="author" content="Fernando Leonid">
+    <link rel='manifest' href='./manifest.json'>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/icon.png">
-    <link rel='manifest' href='/manifest.json'>
     <title>Document</title>
 </head>
 <body>
@@ -100,12 +100,17 @@
             $(".menu").hide();
         });
     </script>
-
+    
     <script>
-        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-
-        const el = document.createElement('pwa-update');
-        document.body.appendChild(el);
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+            .then(function () {
+            console.log('service worker registered');
+            })
+            .catch(function () {
+            console.warn('service worker failed');
+            });
+        }
     </script>
 </body>
 </html>
